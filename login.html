@@ -1,0 +1,71 @@
+<!--foodify prototype version 0.0
+date: 9/28/2016
+
+Please use english to comment or to name classes, variables or whatever that are to be used!-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Place favicon.ico in the root directory
+        favico will be the icon of the application -->
+        <link rel="apple-touch-icon" href="">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class = "foodify-header">
+            <div class="container-fluid">
+                <h1>foodify</h1>
+            </div>
+        </div>
+        <div class = "container-fluid">
+            <div class="row">
+                <div class = "col-sm-3">
+                    <br>
+                </div>
+                <div class = "col-sm-6">
+                    <form id="login" name="login">
+                        <h2>Iniciar sesión</h2>
+                        <div class = "loginGroup">
+                            <label for="userID">Email/usuario</label>
+                            <input type="text" id="userID" placeholder="Usuario" class="form-control">
+                        </div>
+                        <div class="loginGroup">
+                            <label for="userPassword">Contraseña</label>
+                            <input type="password" id="userPassword" pattern=".{8}" required title="Password must be at least 8 characters" class="form-control">
+                        </div>
+                        <!--We are going to capture the submit with jquery-->
+                        <div class="loginGroup">
+                            <br><br>
+                            <input type="submit" class = "btn btn-default" value="Iniciar sesión">
+                        </div>
+                        <div class="loginGroup">
+                            <h5>¿Perdiste tu contraseña?</h5>
+                            <a class="btn btn-link" href="#">Recuperar contraseña</a>
+                        </div>
+                        <div class="loginGroup">
+                            <h5>¿Todavía no tienes un usuario?</h5>
+                            <a id="register" class="btn btn-link" href="#">Registro</a>
+                        </div>
+                    </form>
+                </div>
+                <div class = "col-sm-3">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
